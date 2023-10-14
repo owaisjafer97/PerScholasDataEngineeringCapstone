@@ -793,7 +793,7 @@ plt.title("Number of transactions vs category")
 ax.yaxis.grid(True, linestyle = '--')
 ax.xaxis.grid(True, linestyle = '--')
 
-plt.savefig("Number_Of_TransactionsvsCategory.png")
+plt.savefig("Number_Of_Transactions_vs_Category.png")
 plt.show()
 
 
@@ -920,7 +920,7 @@ plt.figure(figsize=(15, 15))
 plt.pie([self_employed_approved, self_employed_not_approved], labels=["Approved","Not Approved"], autopct='%1.2f%%', startangle=180, colors=['teal','orange'])
 plt.title("Percentage Self Employed Approved for Loan")
 plt.legend(loc = 'upper right')
-plt.savefig("Percentage Self Employed Approved for Loan.png")
+plt.savefig("Percentage_Self_Employed_Approved_for_Loan.png")
 plt.show()
 
 time.sleep(3)
