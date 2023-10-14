@@ -1,0 +1,433 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20232.23.0909.1159                               -->
+<workbook original-version='18.1' source-build='2023.2.2 (20232.23.0909.1159)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <SavingAnalyticObjects />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='cdw_sapp_branch' inline='true' name='federated.1kvvajp00f9nhx16s7ufr0cnw910' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='cdw_sapp_branch' name='semistructpassivestore-direct.1pqngzm1jthyef19134hd0nug4is'>
+            <connection class='semistructpassivestore-direct' directory='C:/Users/Learner_9ZH3Z191/Desktop/Owais Jafer - Data Engineering Capstone' filename='cdw_sapp_branch.json' password='' server=''>
+              <semistruct-schemas>
+                <semistruct-schema table='[cdw_sapp_branch.json]'>
+                  <map key='{root}' value='true' />
+                </semistruct-schema>
+              </semistruct-schemas>
+            </connection>
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='semistructpassivestore-direct.1pqngzm1jthyef19134hd0nug4is' name='cdw_sapp_branch.json' table='[cdw_sapp_branch.json]' type='table' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='semistructpassivestore-direct.1pqngzm1jthyef19134hd0nug4is' name='cdw_sapp_branch.json' table='[cdw_sapp_branch.json]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Document Index (generated)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Document Index (generated)]</local-name>
+            <parent-name>[cdw_sapp_branch.json]</parent-name>
+            <remote-alias>Document Index (generated)</remote-alias>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cdw_sapp_branch.json_B6A28E185A01435BAD4825DE7D4CB535]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BRANCH_CITY</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[BRANCH_CITY]</local-name>
+            <parent-name>[cdw_sapp_branch.json]</parent-name>
+            <remote-alias>BRANCH_CITY</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cdw_sapp_branch.json_B6A28E185A01435BAD4825DE7D4CB535]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BRANCH_CODE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[BRANCH_CODE]</local-name>
+            <parent-name>[cdw_sapp_branch.json]</parent-name>
+            <remote-alias>BRANCH_CODE</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cdw_sapp_branch.json_B6A28E185A01435BAD4825DE7D4CB535]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BRANCH_NAME</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[BRANCH_NAME]</local-name>
+            <parent-name>[cdw_sapp_branch.json]</parent-name>
+            <remote-alias>BRANCH_NAME</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cdw_sapp_branch.json_B6A28E185A01435BAD4825DE7D4CB535]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BRANCH_PHONE</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[BRANCH_PHONE]</local-name>
+            <parent-name>[cdw_sapp_branch.json]</parent-name>
+            <remote-alias>BRANCH_PHONE</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cdw_sapp_branch.json_B6A28E185A01435BAD4825DE7D4CB535]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BRANCH_STATE</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[BRANCH_STATE]</local-name>
+            <parent-name>[cdw_sapp_branch.json]</parent-name>
+            <remote-alias>BRANCH_STATE</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cdw_sapp_branch.json_B6A28E185A01435BAD4825DE7D4CB535]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BRANCH_STREET</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[BRANCH_STREET]</local-name>
+            <parent-name>[cdw_sapp_branch.json]</parent-name>
+            <remote-alias>BRANCH_STREET</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cdw_sapp_branch.json_B6A28E185A01435BAD4825DE7D4CB535]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BRANCH_ZIP</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[BRANCH_ZIP]</local-name>
+            <parent-name>[cdw_sapp_branch.json]</parent-name>
+            <remote-alias>BRANCH_ZIP</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cdw_sapp_branch.json_B6A28E185A01435BAD4825DE7D4CB535]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LAST_UPDATED</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[LAST_UPDATED]</local-name>
+            <parent-name>[cdw_sapp_branch.json]</parent-name>
+            <remote-alias>LAST_UPDATED</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cdw_sapp_branch.json_B6A28E185A01435BAD4825DE7D4CB535]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Branch City' datatype='string' name='[BRANCH_CITY]' role='dimension' semantic-role='[City].[Name]' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>BRANCH_CITY</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column aggregation='Sum' caption='Branch Code' datatype='real' name='[BRANCH_CODE]' role='dimension' type='ordinal'>
+        <desc>
+          <formatted-text>
+            <run>BRANCH_CODE</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Branch Name' datatype='string' name='[BRANCH_NAME]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>BRANCH_NAME</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Branch Phone' datatype='string' name='[BRANCH_PHONE]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>BRANCH_PHONE</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Branch State' datatype='string' name='[BRANCH_STATE]' role='dimension' semantic-role='[State].[Name]' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>BRANCH_STATE</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Branch Street' datatype='string' name='[BRANCH_STREET]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>BRANCH_STREET</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column aggregation='Sum' caption='Branch Zip' datatype='real' default-format='*00000' name='[BRANCH_ZIP]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal'>
+        <desc>
+          <formatted-text>
+            <run>BRANCH_ZIP</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column aggregation='Sum' datatype='integer' name='[Document Index (generated)]' role='dimension' type='ordinal'>
+        <desc>
+          <formatted-text>
+            <run>Document Index (generated)</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Last Updated' datatype='string' name='[LAST_UPDATED]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>LAST_UPDATED</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='cdw_sapp_branch.json' datatype='table' name='[__tableau_internal_object_id__].[cdw_sapp_branch.json_B6A28E185A01435BAD4825DE7D4CB535]' role='measure' type='quantitative' />
+      <column-instance column='[BRANCH_CITY]' derivation='Attribute' name='[attr:BRANCH_CITY:nk]' pivot='key' type='nominal' />
+      <column-instance column='[BRANCH_CODE]' derivation='Attribute' name='[attr:BRANCH_CODE:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[BRANCH_STATE]' derivation='Attribute' name='[attr:BRANCH_STATE:nk]' pivot='key' type='nominal' />
+      <column-instance column='[BRANCH_ZIP]' derivation='Attribute' name='[attr:BRANCH_ZIP:ok]' pivot='key' type='ordinal' />
+      <_.fcp.SchemaViewerObjectModel.false...folder name='Cdw Sapp Branch' role='dimensions'>
+        <folder-item name='[BRANCH_CITY]' type='field' />
+        <folder-item name='[BRANCH_CODE]' type='field' />
+        <folder-item name='[BRANCH_NAME]' type='field' />
+        <folder-item name='[BRANCH_PHONE]' type='field' />
+        <folder-item name='[BRANCH_STATE]' type='field' />
+        <folder-item name='[BRANCH_STREET]' type='field' />
+        <folder-item name='[Document Index (generated)]' type='field' />
+        <folder-item name='[LAST_UPDATED]' type='field' />
+      </_.fcp.SchemaViewerObjectModel.false...folder>
+      <_.fcp.SchemaViewerObjectModel.true...folders-common>
+        <folder name='Cdw Sapp Branch'>
+          <folder-item name='[BRANCH_CITY]' type='field' />
+          <folder-item name='[BRANCH_CODE]' type='field' />
+          <folder-item name='[BRANCH_NAME]' type='field' />
+          <folder-item name='[BRANCH_PHONE]' type='field' />
+          <folder-item name='[BRANCH_STATE]' type='field' />
+          <folder-item name='[BRANCH_STREET]' type='field' />
+          <folder-item name='[Document Index (generated)]' type='field' />
+          <folder-item name='[LAST_UPDATED]' type='field' />
+        </folder>
+      </_.fcp.SchemaViewerObjectModel.true...folders-common>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='false' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <analytic-model>
+        <name>
+          <field name='[AnalyticModel:{dff0ac7e-e93e-4dc6-a002-13036df92b99}]' />
+        </name>
+        <analytic-model-specifications class='cluster-specifications'>
+          <analysis-fields>
+            <field name='[federated.1kvvajp00f9nhx16s7ufr0cnw910].[attr:BRANCH_CITY:nk]' />
+            <field name='[federated.1kvvajp00f9nhx16s7ufr0cnw910].[attr:BRANCH_CODE:ok]' />
+            <field name='[federated.1kvvajp00f9nhx16s7ufr0cnw910].[attr:BRANCH_STATE:nk]' />
+            <field name='[federated.1kvvajp00f9nhx16s7ufr0cnw910].[attr:BRANCH_ZIP:ok]' />
+          </analysis-fields>
+          <filter-fields />
+          <lod-fields />
+          <number-of-desired-clusters>0</number-of-desired-clusters>
+          <is-dissagregate>false</is-dissagregate>
+        </analytic-model-specifications>
+        <result-fields />
+      </analytic-model>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='cdw_sapp_branch.json' id='cdw_sapp_branch.json_B6A28E185A01435BAD4825DE7D4CB535'>
+            <properties context=''>
+              <relation connection='semistructpassivestore-direct.1pqngzm1jthyef19134hd0nug4is' name='cdw_sapp_branch.json' table='[cdw_sapp_branch.json]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{222AA0B7-94D9-42AD-9F24-BA927390F561}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cdw_sapp_branch' name='federated.1kvvajp00f9nhx16s7ufr0cnw910' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1kvvajp00f9nhx16s7ufr0cnw910'>
+            <column caption='Branch City' datatype='string' name='[BRANCH_CITY]' role='dimension' semantic-role='[City].[Name]' type='nominal'>
+              <desc>
+                <formatted-text>
+                  <run>BRANCH_CITY</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column aggregation='Sum' caption='Branch Code' datatype='real' name='[BRANCH_CODE]' role='dimension' type='ordinal'>
+              <desc>
+                <formatted-text>
+                  <run>BRANCH_CODE</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column caption='Branch State' datatype='string' name='[BRANCH_STATE]' role='dimension' semantic-role='[State].[Name]' type='nominal'>
+              <desc>
+                <formatted-text>
+                  <run>BRANCH_STATE</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column aggregation='Sum' caption='Branch Zip' datatype='real' default-format='*00000' name='[BRANCH_ZIP]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal'>
+              <desc>
+                <formatted-text>
+                  <run>BRANCH_ZIP</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column-instance column='[BRANCH_CITY]' derivation='None' name='[none:BRANCH_CITY:nk]' pivot='key' type='nominal' />
+            <column-instance column='[BRANCH_CODE]' derivation='None' name='[none:BRANCH_CODE:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[BRANCH_STATE]' derivation='None' name='[none:BRANCH_STATE:nk]' pivot='key' type='nominal' />
+            <column-instance column='[BRANCH_ZIP]' derivation='None' name='[none:BRANCH_ZIP:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1kvvajp00f9nhx16s7ufr0cnw910].[:Measure Names]'>
+            <groupfilter function='level-members' level='[:Measure Names]' />
+          </filter>
+          <slices>
+            <column>[federated.1kvvajp00f9nhx16s7ufr0cnw910].[:Measure Names]</column>
+          </slices>
+          <aggregation value='false' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1kvvajp00f9nhx16s7ufr0cnw910].[Longitude (generated)]' field-type='quantitative' max='-11112102.837672319' min='-14162787.287511177' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1kvvajp00f9nhx16s7ufr0cnw910].[Latitude (generated)]' field-type='quantitative' max='5325794.946249295' min='3170165.4626393542' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <lod column='[federated.1kvvajp00f9nhx16s7ufr0cnw910].[none:BRANCH_STATE:nk]' />
+              <lod column='[federated.1kvvajp00f9nhx16s7ufr0cnw910].[none:BRANCH_CITY:nk]' />
+              <lod column='[federated.1kvvajp00f9nhx16s7ufr0cnw910].[none:BRANCH_CODE:ok]' />
+              <lod column='[federated.1kvvajp00f9nhx16s7ufr0cnw910].[none:BRANCH_ZIP:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-mode' value='selection' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1kvvajp00f9nhx16s7ufr0cnw910].[Latitude (generated)]</rows>
+        <cols>[federated.1kvvajp00f9nhx16s7ufr0cnw910].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{EABE6F9F-2F46-46D0-A165-6F5A6209E114}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1FC07E7B-29FE-446C-AD8B-EAB4E01EEE75}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='1' />
+      </viewpoint>
+      <simple-id uuid='{6127C978-8D4C-424D-84A2-621DDE066A7C}' />
+    </window>
+  </windows>
+</workbook>

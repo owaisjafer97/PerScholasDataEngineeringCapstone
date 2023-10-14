@@ -1,0 +1,4 @@
+Part 2 Capstone Sample Data for Testing
+Zipcodes : 53045, 23223, 20814
+Social Security Numbers Testing Data : 123453242, 123452373, 123458078
+Credit Card Numbers : 4210653311215039, 4210653311229354, 4210653312241914
