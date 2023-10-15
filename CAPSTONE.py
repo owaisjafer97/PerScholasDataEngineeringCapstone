@@ -20,7 +20,7 @@ import warnings
 warnings.filterwarnings("ignore")
 
 #this is used to read the credentials, username and password in the credentials.json file
-with open("Project\credentials.json", "r") as credentials_file:
+with open("credentials.json", "r") as credentials_file:
     credentials = json.load(credentials_file)
 
 #PART 1 CAPSTONE
@@ -41,18 +41,18 @@ for j in (211,311,411,511,611,711,811,911): #these numbers are not valid area co
     AREA_CODE_LIST.remove(j)
 
 #to get all possible USA zip codes in list form
-US_CITIES_ZIPCODES_DF = pd.read_csv('C:\Users\Learner_9ZH3Z191\Desktop\Owais Jafer - Data Engineering Capstone\Project\uszips.csv')
+US_CITIES_ZIPCODES_DF = pd.read_csv('uszips.csv')
 US_CITIES_ZIPCODES_LIST = US_CITIES_ZIPCODES_DF['zip'].to_list()
 
 #to get a list of all USA cities
-US_CITIES_DF = pd.read_csv('C:\Users\Learner_9ZH3Z191\Desktop\Owais Jafer - Data Engineering Capstone\Project\uscities.csv')
+US_CITIES_DF = pd.read_csv('uscities.csv')
 US_CITIES_LIST = US_CITIES_DF['city'].tolist()
 
 state_abbreviation_to_name_dictionary = {'AL': 'Alabama','AK': 'Alaska','AZ': 'Arizona','AR': 'Arkansas','CA': 'California','CO': 'Colorado','CT': 'Connecticut','DE': 'Delaware','FL': 'Florida','GA': 'Georgia','HI': 'Hawaii','ID': 'Idaho','IL': 'Illinois','IN': 'Indiana','IA': 'Iowa','KS': 'Kansas','KY': 'Kentucky','LA': 'Louisiana','ME': 'Maine','MD': 'Maryland','MA': 'Massachusetts','MI': 'Michigan','MN': 'Minnesota','MS': 'Mississippi','MO': 'Missouri','MT': 'Montana','NE': 'Nebraska','NV': 'Nevada','NH': 'New Hampshire','NJ': 'New Jersey','NM': 'New Mexico','NY': 'New York','NC': 'North Carolina','ND': 'North Dakota','OH': 'Ohio','OK': 'Oklahoma','OR': 'Oregon','PA': 'Pennsylvania','RI': 'Rhode Island','SC': 'South Carolina','SD': 'South Dakota','TN': 'Tennessee','TX': 'Texas','UT': 'Utah','VT': 'Vermont','VA': 'Virginia','WA': 'Washington','WV': 'West Virginia','WI': 'Wisconsin','WY': 'Wyoming'}
 
 #Here we are building a database called cdw_sapp_custmer using Spark and adding it to the workbench after the required mapping is done
 
-CUSTOMER_DF = spark.read.json("Project\cdw_sapp_custmer.json") #reading the JSON file in Spark
+CUSTOMER_DF = spark.read.json("cdw_sapp_custmer.json") #reading the JSON file in Spark
 CUSTOMER_DF = CUSTOMER_DF.withColumn("FIRST_NAME", initcap(CUSTOMER_DF["FIRST_NAME"])) #making first name to a title case
 CUSTOMER_DF = CUSTOMER_DF.withColumn("MIDDLE_NAME", lower(CUSTOMER_DF["MIDDLE_NAME"])) #making the middle name to lower case
 CUSTOMER_DF = CUSTOMER_DF.withColumn("LAST_NAME", initcap(CUSTOMER_DF["LAST_NAME"])) #making last name to a title case
@@ -90,7 +90,7 @@ CUSTOMER_DF.write.format("jdbc") \
 print("\nx----------------CDW_SAPP_CUSTOMER CREATED AND IN CREDITCARD_CAPSTONE DATABASE---------------x \n")
 CUSTOMER_DF.show()
 
-BRANCH_DF = spark.read.json("Project\cdw_sapp_branch.json")
+BRANCH_DF = spark.read.json("cdw_sapp_branch.json")
 BRANCH_DF = BRANCH_DF.withColumn("BRANCH_CODE", BRANCH_DF["BRANCH_CODE"])
 BRANCH_DF = BRANCH_DF.withColumn("BRANCH_NAME", BRANCH_DF['BRANCH_NAME'])
 BRANCH_DF = BRANCH_DF.withColumn("BRANCH_STREET", BRANCH_DF['BRANCH_STREET'])
@@ -124,7 +124,7 @@ BRANCH_DF.write.format("jdbc") \
 print("x---------------CDW_SAPP_BRANCH CREATED AND IN CREDITCARD_CAPSTONE DATABASE----------------x\n")
 BRANCH_DF.show()
 
-CREDIT_DF = spark.read.json("Project\cdw_sapp_credit.json")
+CREDIT_DF = spark.read.json("cdw_sapp_credit.json")
 CREDIT_DF = CREDIT_DF.withColumn("CUST_CC_NO", CREDIT_DF["CREDIT_CARD_NO"])
 CREDIT_DF = CREDIT_DF.withColumn("DAY", CREDIT_DF['DAY'])
 CREDIT_DF = CREDIT_DF.withColumn("MONTH", CREDIT_DF['MONTH'])
@@ -690,7 +690,10 @@ def transaction_in_range():
             cursor.execute(transaction_in_range_query)
             transaction_in_range_result = cursor.fetchall()
 
-            print(f"The transactions in the given date range : {start_date} - {end_date}")
+            print(f"\nThe transactions in the given date range : {start_date} - {end_date}")
+
+            if len(transaction_in_range_result) == 0:
+                print("\nNo transactions found for the given dates range")
 
             for row in transaction_in_range_result:
                 transaction_timeid = row[0]

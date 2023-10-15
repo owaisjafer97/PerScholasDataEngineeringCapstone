@@ -62,10 +62,10 @@ This console-based project offers users insights into bank transactions and cust
 
 ## Additional Visualizations
 
-- ![Number_Of_Transactions_vs_Category.png](Number_Of_Transactions_vs_Category.png): Shows categories and the number of transactions per category.
-- ![Number_Of_Customers_vs_State.png](Number_Of_Customers_vs_State.png): Illustrates the states and the number of customers.
-- ![Transaction_Sum_vs_Customer.png](Transaction_Sum_vs_Customer.png): Shows customer names and the total amount of money spent by each customer.
-- ![Max_Transaction_Volume_vs_Month.png](Max_Transaction_Volume_vs_Month.png): Highlights the top three months in which transactions occurred.
-- ![Healthcare_Transaction_Volume_vs_Branch.png](Healthcare_Transaction_Volume_vs_Branch.png): Indicates which branch had the most transactions in the healthcare category.
-- ![Percentage_Self_Employed_Approved_for_Loan.png](Percentage_Self_Employed_Approved_for_Loan.png): Depicts the ratio of people approved for a loan who are self-employed.
-- ![Percentage_Married_Male_Approved_For_Loan.png](Percentage_Married_Male_Approved_For_Loan.png): Demonstrates the ratio of married males approved for a loan, with additional insights.
+- ![Alt text](Transaction_Sum_vs_Customer.png): Shows categories and the number of transactions per category.
+- ![Alt text](Number_Of_Customers_vs_State.png): Illustrates the states and the number of customers.
+- ![Alt text](Transaction_Sum_vs_Customer.png): Shows customer names and the total amount of money spent by each customer.
+- ![Alt text](Max_Transaction_Volume_vs_Month.png): Highlights the top three months in which transactions occurred.
+- ![Alt text](Healthcare_Transaction_Volume_vs_Branch.png): Indicates which branch had the most transactions in the healthcare category.
+- ![Alt text](Percentage_Self_Employed_Approved_for_Loan.png): Depicts the ratio of people approved for a loan who are self-employed.
+- ![Alt text](Percentage_Married_Male_Approved_For_Loan.png): Demonstrates the ratio of married males approved for a loan, with additional insights.
